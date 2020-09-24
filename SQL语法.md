@@ -16,6 +16,16 @@
       - [7.13.2 工资高于 60 部门所有人的信息](#7132-工资高于-60-部门所有人的信息)
     - [7.14 子查询（作为一张表）](#714-子查询作为一张表)
       - [7.14.1 查询员工表中工资排名前 5 名的员工信息](#7141-查询员工表中工资排名前-5-名的员工信息)
+    - [7.16 表连接查询](#716-表连接查询)
+      - [7.16.1 内连接查询（INNER JOIN ON）](#7161-内连接查询inner-join-on)
+      - [7.16.2 三表连接查询](#7162-三表连接查询)
+      - [7.16.3 左外连接（LEFT JOIN ON）](#7163-左外连接left-join-on)
+      - [7.16.4 右外连接（RIGHT JOIN ON）](#7164-右外连接right-join-on)
+  - [八、DML 操作【重点】](#八dml-操作重点)
+    - [8.1 新增（INSERT）](#81-新增insert)
+    - [8.2 修改（UPDATE）](#82-修改update)
+    - [8.3 删除（DELETE）](#83-删除delete)
+    - [8.4 清空整表数据（TRUNCATE）](#84-清空整表数据truncate)
 
 ## 查询语句
 
@@ -240,3 +250,91 @@ LIMIT 0,5;
 
 - 将子查询“多行多列”的结果作为外部查询的一张表，做第二次查询
 - 注意：子查询作为临时表，为其赋予一个临时表名
+
+### 7.16 表连接查询
+
+#### 7.16.1 内连接查询（INNER JOIN ON）
+
+> ```sql
+> SELECT 列名 FROM 表 连接方式 表2 ON 连接条件
+> ```
+
+```sql
+# 1. 查询所有有部门的员工信息（不包括没有部门的员工）SQL标准
+SELECT * FROM t_employees INNER JOIN t_jobs ON t_employees.job_id = t_jobs.job_id
+
+# 2. 查询所有有部门的员工信息（不包括没有部门的员工）MYSQL
+SELECT * FROM t_employees,t_jobs WHERE t_employees.job_id = t_jobs.job_id
+```
+
+- 经验：在 MySql 中，第二种方式也可以作为内连接查询，但是不符合 SQL 标准
+- 而第一种属于 SQL 标准，与其他关系型数据库通用
+
+#### 7.16.2 三表连接查询
+
+```sql
+# 查询所有员工工号、名字、部门名称、部门所在国家ID
+SELECT * FROM t_employees e
+INNER JOIN t_departments d
+ON e.department_id = d.department_id
+INNER JOIN t_locations l
+ON d.location_id = l.location_id
+```
+
+#### 7.16.3 左外连接（LEFT JOIN ON）
+
+```sql
+# 查询所有员工信息，以及所对应的部门名称（没有部门的员工，也在查询结果中，部门名称为NULL填充）
+SELECT e.employees_id, e.first_name, e.salary, d.department_name FROM t_employees e
+LEFT JOIN t_employees d
+ON e.department_id = d.department_id
+```
+
+- 注意：左外连接，是以左表为主表，依次向右匹配，匹配到，返回结果
+- 匹配不到，则返回 NULL 值填充
+
+#### 7.16.4 右外连接（RIGHT JOIN ON）
+
+```sql
+# 查询所有部门信息，以及此部门中的所有员工信息（没有员工的部门，也在查询结果中，员工信息以NULL填充）
+SELECT e.employees_id, e.first_name, e.salary, d.department_name FROM t_employees e
+RIGHT JOIN t_employees d
+ON e.department_id = d.department_id
+```
+
+- 注意：右外连接，是以右表为主表，依次向左匹配，匹配到，返回结果
+- 匹配不到，则返回 NULL 值填充
+
+## 八、DML 操作【重点】
+
+---
+
+### 8.1 新增（INSERT）
+
+> ```sql
+> INSERT INTO 表名（列1，列2，列3，...） VALUES (值1，值2，值3)
+> ```
+
+- 值与列顺序相对应
+
+### 8.2 修改（UPDATE）
+
+> ```sql
+> UPDATE 表名 SET 列1=新值1，列2=新值2，列3=新值3 WHERE 条件;
+> ```
+
+- 不加 WHERE 修改整张表
+
+### 8.3 删除（DELETE）
+
+> ```sql
+> DELETE FROM 表名 WHERE 条件；
+> ```
+
+- 不加 WHERE 删除整张表
+
+### 8.4 清空整表数据（TRUNCATE）
+
+> ```sql
+> TRUNCATE TABLE 表名；
+> ```
