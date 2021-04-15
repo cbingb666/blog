@@ -53,6 +53,14 @@ body {
 ### nth-child
 参考 [https://developer.mozilla.org/zh-CN/docs/Web/CSS/:nth-child](https://developer.mozilla.org/zh-CN/docs/Web/CSS/:nth-child)
 
+### 文本竖排
+>使用`writing-mode`属性
+
+- vertical-rl：垂直方向自右而左的书写方式。 即top-bottom-right-left.
+- vertical-lr：垂直方向内内容从上到下，水平方向从左到右
+- lr-tb：从左向右，从上往下；
+- tb-rl：从上往下，从右向左。
+
 
 ## 兼容样式
 
