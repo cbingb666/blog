@@ -1,4 +1,4 @@
-# Mysql安装运行
+# Mysql
 
 ## For Mac
 

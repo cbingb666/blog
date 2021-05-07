@@ -4,7 +4,7 @@
 
 ---
 
-```json
+```json5
 {
   // 配置 path-intellisense 别名路径
   "path-intellisense.mappings": {

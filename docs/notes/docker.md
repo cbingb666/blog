@@ -1,28 +1,17 @@
-# docker
-
-- [docker](#docker)
-  - [参考案例](#参考案例)
-  - [安装](#安装)
-  - [创建应用步骤](#创建应用步骤)
-  - [命令](#命令)
-  - [linux](#linux)
-  - [dockerfile 配置示例](#dockerfile-配置示例)
-  - [docker-compose](#docker-compose)
-
----
+# Docker
 
 ## 参考案例
 
-- 自动发布案例 https://juejin.im/post/6844903946234904583
-- 私有镜像库案例 https://www.cnblogs.com/zhangxingeng/p/11558782.html
+- [自动发布案例](https://juejin.im/post/6844903946234904583)
+- [私有镜像库案例](https://www.cnblogs.com/zhangxingeng/p/11558782.html)
 
 ## 安装
 
-https://www.docker.com/get-started
+[https://www.docker.com/get-started](https://www.docker.com/get-started)
 
 ## 创建应用步骤
 
-1. 写一个 Dockerfile 文件
+1. 写一个 **Dockerfile** 文件
 2. 使用 `docker image build` 来将 Dockerfile 打包成镜像
 3. 使用 `docker container create` 来根据镜像创建一个容器
 4. 使用 `docker container start` 来启动一个创建好的容器
@@ -76,10 +65,12 @@ EXPOSE 80
 
 ## docker-compose
 
-> Compose 是用于定义和运行多容器 Docker 应用程序的工具。通过 Compose，您可以使用 YML 文件来配置应用程序需要的所有服务。然后，使用一个命令，就可以从 YML 文件配置中创建并启动所有服务。  
+> Compose 是用于定义和运行多容器 Docker 应用程序的工具。通过 Compose，您可以使用
+> YML 文件来配置应用程序需要的所有服务。然后，使用一个命令，就可以从 YML
+> 文件配置中创建并启动所有服务。
 
-官方文档 https://docs.docker.com/compose/install/#install-compose
-macos 安装 docker 中已内置, 以下安装方法 for linux
+官方文档 https://docs.docker.com/compose/install/#install-compose macos
+安装 docker 中已内置, 以下安装方法 for linux
 
 - 下载
 
@@ -101,3 +92,4 @@ docker-compose stop info
 docker-compose rm info
 docker-compose up -d info # -d 代表后台运行
 ```
+

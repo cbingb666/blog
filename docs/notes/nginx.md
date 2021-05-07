@@ -1,16 +1,7 @@
-# nginx
-
-- [nginx](#nginx)
-  - [默认配置文件目录](#默认配置文件目录)
-  - [命令](#命令)
-
----
+# Nginx
 
 ## 默认配置文件目录
-
-```sh
-/etc/nginx/nginx.conf
-```
+`/etc/nginx/nginx.conf`
 
 ## 命令
 

@@ -1,14 +1,37 @@
+const notes = require('./sidebarConfig/notes')
 const themeConfig = {
-  nav: [
-    {text: 'Notes', link: '/notes/'}
-  ],
   sidebar: {
-    '/notes/': [
-      'charles',
-      'docker',
-      'editorconfig',
-      'git命令'
-    ]
+    '/notes/': notes
   }
 }
 module.exports = themeConfig
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,15 +1,6 @@
 # pm2
 
-- [pm2](#pm2)
-  - [官网](#官网)
-  - [安装](#安装)
-  - [命令](#命令)
-
----
-
-## 官网
-
-https://pm2.keymetrics.io/
+> [官网](https://pm2.keymetrics.io/)
 
 ## 安装
 
@@ -59,3 +50,4 @@ pm2 resurrect
 # 查看日志
 pm2 logs
 ```
+

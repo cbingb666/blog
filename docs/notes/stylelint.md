@@ -1,11 +1,5 @@
 # stylelint
 
-- [stylelint](#stylelint)
-  - [安装](#安装)
-  - [创建配置文件](#创建配置文件)
-
----
-
 ## 安装
 
 ```sh

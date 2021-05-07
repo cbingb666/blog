@@ -1,8 +1,9 @@
-# editorconfig 编辑器配置
+# Editorconfig
 官方文档 [https://editorconfig.org/](https://editorconfig.org/)
 
+
 ## 常用配置
-```
+```.editorconfig
 # 根目录
 root = true
 

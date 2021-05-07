@@ -66,7 +66,7 @@ body {
 
 ### 全面屏兼容
 ```
-// 原本没有padding-bottomk
+// 原本没有padding-bottom
 .box1 {
     padding-bottom: constant(safe-area-inset-bottom);
     padding-bottom: env(safe-area-inset-bottom);
@@ -79,4 +79,4 @@ body {
 }
 ```
 
-### 
+###

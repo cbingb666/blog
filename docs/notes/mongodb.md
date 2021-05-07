@@ -1,4 +1,4 @@
-# mongodb
+# Mongodb
 
 - [mongodb](#mongodb)
   - [安装 MongoDB@4.4 for macos](#安装-mongodb44-for-macos)
