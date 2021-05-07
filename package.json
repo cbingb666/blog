@@ -1,0 +1,24 @@
+{
+  "name": "notes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "vuepress": "^1.8.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/c947694498/notes.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/c947694498/notes/issues"
+  },
+  "homepage": "https://github.com/c947694498/notes#readme"
+}
