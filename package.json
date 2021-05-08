@@ -2,7 +2,6 @@
   "name": "notes",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "dependencies": {
     "vuepress": "^1.8.2"
   },
@@ -10,8 +9,8 @@
     "plop": "^2.7.4"
   },
   "scripts": {
-    "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs",
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs",
     "plop:notes": "plop --plopfile"
   },
   "repository": {
