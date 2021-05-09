@@ -4,7 +4,7 @@ module.exports = {
   dest: './dist',
   title: 'CBB Blog',
   head: [
-    ['link', {rel: 'icon', href: 'logo.png'}]
+    ['link', {rel: 'icon', href: '/logo.png'}]
   ],
   themeConfig
 }
