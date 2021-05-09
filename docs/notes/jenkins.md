@@ -19,7 +19,16 @@
 > [参考文档](https://github.com/jenkinsci/docker/blob/master/README.md)
 
 ```shell script
-docker run -d -v --name jenkins jenkins_home:/var/jenkins_home -p 8080:8080 -p 50000:50000 jenkins/jenkins:lts
+docker run \
+  -u root \
+  --rm \
+  -d \
+  -p 8080:8080 \
+  -p 50000:50000 \
+  -v jenkins-data:/var/jenkins_home \
+  -v /var/run/docker.sock:/var/run/docker.sock \
+  --name jenkins \
+  jenkinsci/blueocean
 ```
 
 
