@@ -1,7 +1,7 @@
 ---
 home: true
 heroImage: /logo.png
-heroText: CBB Notes
+heroText: CBB Blog
 tagline:
 actionText: Enter Notes →
 actionLink: /notes/
