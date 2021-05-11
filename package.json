@@ -6,7 +6,9 @@
     "vuepress": "^1.8.2"
   },
   "devDependencies": {
-    "plop": "^2.7.4"
+    "plop": "^2.7.4",
+    "vuepress-plugin-flowchart": "^1.4.3",
+    "vuepress-plugin-mermaidjs": "^1.8.1"
   },
   "scripts": {
     "dev": "vuepress dev docs",
