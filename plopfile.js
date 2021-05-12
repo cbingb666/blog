@@ -3,12 +3,12 @@ const path = require("path")
 
 module.exports = function (plop) {
   plop.setGenerator('notes', {
-    description: '生成notes sidebar config',
+    description: '将根据docs/notes目录下的.md文件生成notes sidebar config',
     prompts: [
       {
         type: 'confirm',
         name: 'submit',
-        message: '确定要生成notes sidebar config，生成后将替换原来的config'
+        message: '将根据docs/notes目录下的.md文件生成notes sidebar config，确定要生成吗？'
       }
     ],
     actions: function (answers) {

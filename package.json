@@ -13,7 +13,7 @@
   "scripts": {
     "dev": "vuepress dev docs",
     "build": "vuepress build docs",
-    "plop:notes": "plop --plopfile"
+    "plop": "plop"
   },
   "repository": {
     "type": "git",
