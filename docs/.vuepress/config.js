@@ -10,7 +10,13 @@ module.exports = {
     ['link', {rel: 'icon', href: '/logo.png'}]
   ],
   themeConfig,
-  plugins: ['mermaidjs','vuepress-plugin-flowchart'],
+  plugins: [
+    'mermaidjs',
+    'vuepress-plugin-flowchart',
+    '@vuepress/medium-zoom',
+    '@vuepress/nprogress',
+    '@vuepress/active-header-links',
+  ],
   configureWebpack: {
     resolve: {
       alias: {
