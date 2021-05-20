@@ -2,9 +2,12 @@
 
 ## 常用插件
 
-markdown流程图插件：
+### mermaidjs
 
-[vuepress-plugin-mermaidjs](https://github.com/eFrane/vuepress-plugin-mermaidjs)
+[vuepress-plugin-mermaidjs](https://github.com/eFrane/vuepress-plugin-mermaidjs)是一款markdown流程图插件
+
+#### 示例
+
 ```mermaid
 sequenceDiagram
 Alice->John: Hello John, how are you?
@@ -13,7 +16,32 @@ loop every minute
 end
 ```
 
-[vuepress-plugin-flowchart](https://github.com/ulivz/vuepress-plugin-flowchart)
+#### 使用
+
+使用下面命令安装
+```shell
+npm install --save-dev vuepress-plugin-mermaidjs
+```
+或
+```
+yarn add -D vuepress-plugin-mermaidjs
+```
+然后在`.vuepress/config.js`中添加插件配置
+``` js
+module.exports = {
+    // ...
+    plugins: [
+        'mermaidjs'
+    ]
+    // ...
+}
+```
+
+### flowchart
+
+[vuepress-plugin-flowchart](https://github.com/ulivz/vuepress-plugin-flowchart) 是一款markdown流程图插件
+
+#### 示例
 @flowstart
 st=>start: Start|past:>http://www.google.com[blank]
 e=>end: End|future:>http://www.google.com
