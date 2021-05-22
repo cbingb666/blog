@@ -15,7 +15,7 @@
     "vuepress-plugin-mermaidjs": "^1.8.1"
   },
   "scripts": {
-    "dev": "vuepress dev docs",
+    "dev": "plop && vuepress dev docs",
     "build": "vuepress build docs",
     "plop": "plop"
   },
