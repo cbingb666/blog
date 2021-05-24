@@ -1,5 +1,7 @@
 # vue3 + vitejs
 
+文档分详细文档vuepress和介绍文章
+
 [awesome-vite](https://github.com/vitejs/awesome-vite#plugins)
 
 ## 初始项目
@@ -150,6 +152,7 @@ npm install vue-router@4
 ```
 
 ## vuex
+[typescript参考](https://dev.to/3vilarthas/vuex-typescript-m4j)
 
 安装
 
@@ -252,5 +255,14 @@ export default defineConfig({
 })
 ```
 
+## 高阶容器组件对全局进行配置
 
+## 权限设计
 
+### 路由权限
+
+### 颗粒化权限
+
+### 权限结构设计
+
+## Image 自动压缩
