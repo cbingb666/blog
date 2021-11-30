@@ -17,7 +17,8 @@
   "scripts": {
     "dev": "plop && vuepress dev docs",
     "build": "vuepress build docs",
-    "plop": "plop"
+    "plop": "plop",
+    "deploy": "sh ./scripts/deploy.sh"
   },
   "repository": {
     "type": "git",

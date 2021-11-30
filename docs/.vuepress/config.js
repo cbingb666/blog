@@ -4,6 +4,7 @@ const themeConfig = require("./themeConfig");
 console.log(join(__dirname, './public/imgs'))
 module.exports = {
   port: 8848,
+  base: '/notes/',
   dest: './dist',
   title: 'CBingBing Blog',
   head: [
