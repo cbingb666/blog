@@ -6,7 +6,7 @@ module.exports = {
   port: 8848,
   base: '/notes/',
   dest: './dist',
-  title: 'CBingBing Blog',
+  title: 'CBingB666 Notes',
   head: [
     ['link', {rel: 'icon', href: '/logo.png'}]
   ],

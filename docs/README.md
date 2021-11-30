@@ -1,7 +1,7 @@
 ---
 home: true
 heroImage: /logo.png
-heroText: CBingBing Blog
+heroText: CBingB666 Notes
 tagline:
 actionText: Enter Notes →
 actionLink: /notes/
