@@ -1,8 +1,9 @@
 import { makeNavbarRoute, makeSidebarRoute } from "../utils/makeRoute";
+import pkg from '../../../package.json'
 
 export const themeConfig = {
-  logo: "https://vuejs.org/images/logo.png",
-
+  logo: "/images/logo.png",
+  repo: pkg.repository,
   navbar: [...makeNavbarRoute("more", "more")],
   sidebar: {
     ...makeSidebarRoute("more", "more"),
