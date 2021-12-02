@@ -12,7 +12,7 @@ function getAbsolutePath(folder: string): string {
  * @param folderName specified folder name
  * @returns \{ title, children: [...fileName] }[]
  */
-export function makeNavbarRoute(folderName: string, text: string): NavbarConfig {
+export function makeNavbarRoute(folderName: string, text?: string): NavbarConfig {
 	const extension = ".md";
 	const basePath = getAbsolutePath(folderName);
 
@@ -40,6 +40,17 @@ export function makeNavbarRoute(folderName: string, text: string): NavbarConfig 
  * @returns \{ '/subPathName/': [ { text, children: [ ...childFileName ] } ] }
 }
  */
-export function makeSidebarRoute(subPathName: string, text: string): SidebarConfigObject {
+export function makeSidebarRoute(subPathName: string, text?: string): SidebarConfigObject {
 	return { [`/${subPathName}/`]: makeNavbarRoute(subPathName, text) };
 }
+
+export const getCategory = (dirs: string[]) => {
+  const navbar = [];
+  const sidebar = {};
+  dirs.forEach(dir => {
+    navbar.push(...makeNavbarRoute(dir))
+    sidebar[`/${dir}/`] = makeNavbarRoute(dir)
+  })
+
+  return {navbar, sidebar}
+};

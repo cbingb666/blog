@@ -1,8 +1,4 @@
-# vscode 配置 setting.json
-
-- [vscode 配置 setting.json](#vscode-配置-settingjson)
-
----
+# vscode配置
 
 ```json5
 {
