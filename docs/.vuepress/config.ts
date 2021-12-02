@@ -6,7 +6,7 @@ import path from 'path'
 
 export default defineUserConfig<DefaultThemeOptions>({
   base: '/blog/',
-  lang: 'en-US',
+  lang: 'zh-CN',
   title: 'CBingB666 Blog',
   description: '欢迎来到我的博客',
   themeConfig: themeConfig,

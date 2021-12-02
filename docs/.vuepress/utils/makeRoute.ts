@@ -48,6 +48,7 @@ export const getCategory = (dirs: string[]) => {
   const navbar = [];
   const sidebar = {};
   dirs.forEach(dir => {
+		console.log(dir)
     navbar.push(...makeNavbarRoute(dir))
     sidebar[`/${dir}/`] = makeNavbarRoute(dir)
   })
