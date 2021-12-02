@@ -1,7 +1,7 @@
 import { getCategory } from "../utils/makeRoute";
 import pkg from "../../../package.json";
 
-const category = getCategory(["env","more"]);
+const category = getCategory(['notes','env','more']);
 
 export const themeConfig = {
   logo: "/images/logo.png",
