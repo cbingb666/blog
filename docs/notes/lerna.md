@@ -19,3 +19,9 @@ lerna add -D <package-name>
 ```sh
 lerna exec -- yarn remove <package-name>
 ```
+
+### 清除所有 node_modules
+
+```sh
+lerna clean
+```
