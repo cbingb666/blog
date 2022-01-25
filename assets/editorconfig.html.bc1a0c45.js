@@ -1,0 +1,1 @@
+const e={key:"v-42d91549",path:"/more/editorconfig.html",title:"Editorconfig",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[{level:2,title:"\u5E38\u7528\u914D\u7F6E",slug:"\u5E38\u7528\u914D\u7F6E",children:[]}],filePathRelative:"more/editorconfig.md",git:{updatedTime:1638381032e3,contributors:[{name:"cbingb666",email:"cbingb666@163.com",commits:1}]}};export{e as data};
